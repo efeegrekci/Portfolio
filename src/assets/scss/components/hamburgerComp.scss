@@ -1,0 +1,27 @@
+.hamburger{display: none; width: 100%; position: fixed; top: 0; left: 0; height: 50px; background-color: #ffffff; align-items: center; padding: 0 40px;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; z-index: 5;
+    .left{width: 50%; height: 100%;display: flex; align-items: center;
+        .profilButton{ display: flex;cursor: pointer; overflow: hidden; width: 30px;
+            .img{ border: 2px solid #FFB400; width: 100%; height: 30px; background-size: cover; background-position: center center; background-repeat: no-repeat; border-radius: 50%;}
+        }
+    }
+    .right{width: 50%; height: 100%;display: flex; align-items: center;justify-content: flex-end;
+        .menuButton{width: 20px;display: flex; flex-direction: column;  cursor: pointer;
+            span{width: 100%; height: 2px; margin: 0 0 5px 0; background-color: #000000;
+                &:last-child{margin: 0;}
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .hamburger{display: flex;}
+  }
+
+@media screen and (max-width: 991px) {
+    .hamburger{padding: 0 30px}
+}
+
+@media screen and (max-width: 767px) {
+    .hamburger{padding: 0 20px}
+    }
+  

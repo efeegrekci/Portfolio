@@ -1,0 +1,28 @@
+/* Fonts */
+@mixin InterLight {font-family: 'InterLight';font-weight: 300;font-style: normal;}
+@mixin InterRegular {font-family: 'InterRegular';font-weight: normal;font-style: normal;}
+@mixin InterMedium {font-family: 'InterMedium';font-weight: 500;font-style: normal;}
+@mixin InterSemiBold {font-family: 'InterSemiBold';font-weight: 600;font-style: normal;}
+@mixin InterBold {font-family: 'InterBold';font-weight: bold;font-style: normal;}
+
+/* Custom Css Code */
+@mixin FullCentered{display: flex;justify-content: center;align-items: center;}
+@mixin SpaceBeetween {display: flex; justify-content: space-between;}
+@mixin SpaceBeetweenCenter {display: flex; justify-content: space-between; align-items: center;}
+@mixin FlexStart {display: flex; justify-content: flex-start;}
+@mixin FlexEnd {display: flex; justify-content: flex-end;}
+@mixin FlexStartCenter {display: flex; justify-content: flex-start; align-items: center;}
+@mixin FlexEndCenter {display: flex; justify-content: flex-end; align-items: center;}
+@mixin FlexDirection {display: flex; flex-direction: column;}
+@mixin FlexWrap {display: flex; flex-wrap: wrap;}
+@mixin StandartAbsolute {position: absolute; top: 0; left: 0;}
+@mixin Images {background-position: center center; background-repeat: no-repeat;}
+@mixin Button {width: 100%; display: flex;a{position: relative;display: flex;overflow: hidden; background-color: $Black; color: $White; font-size: 16px; line-height: 19px; @include InterSemiBold; padding: 15px 40px;&::before{content: ""; width: 100%; height: 100%; background-color: $White; color: $Black; position: absolute; top: 0; left: -100%; transition: left 0.4s ease-in-out;z-index: 1;}&:hover{color: $Black;&::before{left: 0;}}span{position: relative; z-index: 2;transition: color 0.4s ease-in-out;}}}
+
+
+/* Colors */
+$Black: #000000;
+$White: #ffffff;
+$Salmon: #fcbd88;
+
+

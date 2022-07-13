@@ -1,0 +1,19 @@
+.mapBox {
+  margin: 0 0 70px 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .mapBox {
+    margin: 0 0 130px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mapBox {
+    margin: 0 0 100px 0;
+  }
+  .mapBox .map iframe {
+    height: 250px;
+  }
+}

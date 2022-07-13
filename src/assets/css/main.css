@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+@font-face {
+  font-family: 'InterBold';
+  src: url("../font/inter/Inter-Bold.eot");
+  src: url("../font/inter/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("../font/inter/Inter-Bold.woff") format("woff"), url("../font/inter/Inter-Bold.ttf") format("truetype"), url("../font/inter/Inter-Bold.svg#Inter-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterLight';
+  src: url("../font/inter/Inter-Light.eot");
+  src: url("../font/inter/Inter-Light.eot?#iefix") format("embedded-opentype"), url("../font/inter/Inter-Light.woff") format("woff"), url("../font/inter/Inter-Light.ttf") format("truetype"), url("../font/inter/Inter-Light.svg#Inter-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterMedium';
+  src: url("../font/inter/Inter-Medium.eot");
+  src: url("../font/inter/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../font/inter/Inter-Medium.woff") format("woff"), url("../font/inter/Inter-Medium.ttf") format("truetype"), url("../font/inter/Inter-Medium.svg#Inter-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterSemiBold';
+  src: url("../font/inter/Inter-SemiBold.eot");
+  src: url("../font/inter/Inter-SemiBold.eot?#iefix") format("embedded-opentype"), url("../font/inter/Inter-SemiBold.woff") format("woff"), url("../font/inter/Inter-SemiBold.ttf") format("truetype"), url("../font/inter/Inter-SemiBold.svg#Inter-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterRegular';
+  src: url("../font/inter/Inter-Regular.eot");
+  src: url("../font/inter/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("../font/inter/Inter-Regular.woff") format("woff"), url("../font/inter/Inter-Regular.ttf") format("truetype"), url("../font/inter/Inter-Regular.svg#Inter-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fonts */
+/* Custom Css Code */
+/* Colors */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #E5E5E5;
+  font-family: 'InterRegular';
+}
+
+main {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+main .bgShadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  min-height: 1350px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main.active .bgShadow {
+  opacity: 1;
+  visibility: visible;
+}
+
+main section.content {
+  width: calc(100% - 413px);
+  padding: 0 30px;
+}
+
+main section.content.detail .titleBox {
+  margin: 70px auto;
+}
+
+main section.content .titleBox {
+  width: 450px;
+  margin: 0 auto 50px;
+}
+
+main section.content .titleBox .title {
+  font-family: 'InterBold';
+  font-size: 32px;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: #2B2B2B;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+
+main section.content .titleBox .desc {
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: capitalize;
+  font-feature-settings: 'calt' off, 'kern' off;
+  color: #767676;
+  text-align: center;
+}
+
+@media screen and (max-width: 1399px) {
+  main section.content .titleBox .title {
+    font-size: 28px;
+    line-height: 115%;
+  }
+  main section.content .titleBox .desc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  main {
+    padding: 80px 0 0 0;
+  }
+  main section.content {
+    width: 100%;
+    padding: 0 40px;
+  }
+  main section.content.detail .titleBox {
+    margin: 40px auto;
+  }
+  main section.content.detail .imageBoxes {
+    margin: 0 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  main section.content {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main section.content {
+    padding: 0 15px;
+  }
+  main section.content.detail .titleBox {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+  main section.content .titleBox {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+}
