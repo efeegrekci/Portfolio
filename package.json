@@ -9,8 +9,6 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.27",
-    "@storybook/core": "^6.5.6",
-    "@storybook/ui": "^6.5.6",
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "mitt": "^3.0.0",
